@@ -227,17 +227,6 @@ svg[class^=slider_] > rect[fill='white'] /* settings checkbuttons slider */ {
 	border: none;
 }
 
-/* fix border hover effect */
-.chatContent_a7d72e:has(> .messagesWrapper_e2e187:hover),
-.chatContent_a7d72e:has(.typing_d7ebeb:hover) {
-	.typing_d7ebeb {
-		border-color: var(--border-hover-color);
-	}
-	& > .messagesWrapper_e2e187 {
-		border-color: var(--border-hover-color);
-	}
-}
-
 /* fix double left border at friends' activity now lane */
 .scroller_bf550a {
 	border-left: 0px solid var(--background-modifier-accent);
@@ -323,14 +312,6 @@ svg[class^=slider_] > rect[fill='white'] /* settings checkbuttons slider */ {
 		border-left: var(--border-width) solid var(--border-color);
 		transition: border-color var(--border-transition);
 		box-sizing: border-box;
-	}
-}
-[class^='channelBottomBarArea_']:hover {
-	& > .buttonContainer_df39bd {
-		border-color: var(--border-hover-color);
-	}
-	& > [class^='channelTextArea_']::after {
-		color: var(--border-hover-color);
 	}
 }
 
